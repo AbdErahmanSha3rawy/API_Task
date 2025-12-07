@@ -1,0 +1,148 @@
+.card{
+    padding: 20px;
+    width: 300px;
+    height: auto;   
+ background-color:rgb(185, 184, 184);
+    border: 5px rgb(14, 10, 238) inset;
+    box-shadow: 10px 10px 10px blue;
+    border-radius: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    display:grid;
+    width:100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px 65px; 
+    justify-self: center;
+    margin-right: 10px;
+
+}
+.title{
+    color: black;
+}
+.img{
+    width: 70%;
+    height: 300px;
+    display: block;
+    justify-self: center;
+    background-color: rgb(185, 189, 192);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(36, 36, 223);
+
+
+}
+h2{
+    height: 50px;
+    overflow-y: hidden;
+
+}
+.descrip{
+    overflow-y: hidden;
+    height: 50px;
+}
+h1{
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  
+.container{
+    width: 80%;
+    display: block;
+    padding: 0px;
+    justify-self: center;
+
+}
+.card{
+    width: 80%;
+    display: block;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+.img{
+    width: 80%;
+    height: 200px;
+    margin: 0px;
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+   body{
+    margin: 0;
+    padding-left: 30px;
+   }
+    .container{
+        width: 100%;
+         display: grid; 
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px 100px; 
+        padding: 10px;
+        justify-self: center;
+        justify-content: space-between;
+}
+.card{
+    width: 250px;
+    margin-bottom: 25px;
+}
+.img{
+    width: 80%;
+    height: 200px;
+    margin: 0px;
+}
+
+}
+@media (min-width: 993px) and (max-width: 1200px){
+       body{
+    margin: 0;
+    padding-left: 0px;
+   }
+    .container{
+        width: 90%;
+         display: grid; 
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px 50px; 
+        padding: 10px;
+        justify-self: center;
+        justify-content: space-between;
+}
+.card{
+    width: 250px;
+    margin-bottom: 25px;
+}
+.img{
+    width: 80%;
+    height: 200px;
+    margin: 0px;
+}
+
+}
+@media (min-width: 1201px) {
+ .container{
+    width: 80%;
+    padding: 10px;
+}
+table{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    table-layout: fixed;
+    width: 100%;
+}
+.text{
+    width: 65%;
+}
+.btns{
+    width: 35%;
+}
+.list{
+    width: 100%;
+    padding: 0;
+
+}
+}
